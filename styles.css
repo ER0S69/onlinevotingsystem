@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     background-color: #4CAF50;
     color: white;
@@ -20,6 +22,7 @@ header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1em;
+    
 }
 
 header h1 {
@@ -28,9 +31,9 @@ header h1 {
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     margin: 0;
+    padding: 0;
     display: flex;
 }
 
@@ -44,25 +47,46 @@ nav ul li a {
     font-weight: 500;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
 main {
     max-width: 1200px;
     margin: 2em auto;
     padding: 0 1em;
+    
+}
+
+.content {
+    max-width: 800px; /* Adjust as needed */
+    padding: 20px;
 }
 
 .section {
     background-color: white;
-    padding: 2em;
+    padding: 1em;
     margin-bottom: 2em;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .section h2 {
     margin-top: 0;
     color: #4CAF50;
+    margin-bottom: 0.5em;
 }
 
+.section p,
+.section ul {
+    color: #666;
+    text-align: left;
+    margin: 0.5em 0;
+}
+
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -73,7 +97,8 @@ form label {
     font-weight: 500;
 }
 
-form input, form select {
+form input,
+form select {
     margin-bottom: 1em;
     padding: 0.75em;
     font-size: 1em;
@@ -96,6 +121,7 @@ form button:hover {
     background-color: #45a049;
 }
 
+/* Admin Options */
 .admin-options {
     display: flex;
     gap: 1em;
@@ -116,17 +142,21 @@ form button:hover {
     background-color: #45a049;
 }
 
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1em;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
     padding: 0.75em;
     text-align: left;
 }
@@ -135,6 +165,7 @@ th {
     background-color: #f4f4f4;
 }
 
+/* Footer Styles */
 footer {
     background-color: #4CAF50;
     color: white;
